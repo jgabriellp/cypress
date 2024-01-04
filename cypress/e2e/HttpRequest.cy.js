@@ -58,6 +58,14 @@ describe("HTTP Request", () =>{
         .its('status')
         .should('equal', 200);
 
+    /*
+        pode ser tb:
+        .then((res) => {
+            cy.log(JSON.stringify(res))
+            expect(res.status).to.eq(200)
+        }
+    */
+
     });
 
 })
