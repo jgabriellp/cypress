@@ -34,3 +34,14 @@ Cypress.Commands.add('teste1', () => {
         }
     });
 })
+
+Cypress.Commands.add('teste2', () => {
+    cy.api({
+        method: 'POST',
+        url: "https://api-test2.certfy.tech/onboarding/api/Authentication/Token",
+        body: {
+            "companyId": "1a9cf891-7d40-4fd3-9666-79bf958ef8ff",
+            "secretKey": "ab2zH3+FWscyESIUjEBFSCBQecz+ilSfzhWqOs6AYoQ="
+        }
+    });
+})
